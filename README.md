@@ -12,30 +12,17 @@ This was just a couple of nights of coding, to get a proof of concept up and run
 
 ## Installation
 * [Install Node](https://nodejs.org/)
-* [Install Gcalcli](https://github.com/insanum/gcalcli)
 * Clone or download project into a folder of your choosing
 * Run *npm install* in that folder. This will install all needed 3rd party libraries.
-* Edit configuration file
 * Run application
 
-### Edit Configuration
-*config.json*
-
-```json
-{
-	"calendarName": "car climate",
-	"username": "your@username",
-	"password": "yourpassword123",
-	"loglevel": "debug",
-	"gcalcliPath": "/usr/local/bin/gcalcli"
-}
-```
-### Run application
+## Run application
 
     nodejs TeslaGcalAC.js
 
+You will be prompted for nescessary details needed to run the app.
+
 ## Room for improvements
 * Run as a proper daemon
-* Register an API key for this app at Google and use a native google calendar api library. Loose dependency of gcalcli.
 * Add a tray icon, with current status and upcoming events
 * Support longer events, and turn on AC every half hour. Could replace *Camper Mode*
