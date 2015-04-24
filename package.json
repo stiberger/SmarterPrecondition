@@ -1,0 +1,12 @@
+{
+	"name": "TeslaGcalAC",
+	"version": "0.0.1",
+	"dependencies": {
+		"cron": "1.0.0",
+		"teslams": "1.0.x",
+		"moment": "2.10.2",
+		"winston": "1.0.x",
+		"googleapis": "2.0.x",
+		"google-auth-library": "0.9.4"
+	}
+}
