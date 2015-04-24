@@ -30,7 +30,7 @@ Every functionality of the calendar is supported.
 * Single events
 * Whole day events, though - these could easily be entered by mistake, so should probably skip them?
 
-For event durations more than an hour, a *turn on* request is made every 29 minute for as long the event is lasting. This is nice as a *camper mode* replacement. Since existing *camper mode* relies on the car being in *neutral*, you can not charge and in some countries, you can not turn of *daylight running lights* and will be on all the time, causing unwanted attention.
+For event durations more than an hour, a *turn on* request is made every 29 minute for as long the event is lasting. This is nice as a *camper mode* replacement. Since existing *camper mode* relies on the car being in *neutral*, you can not charge, and in some countries, you can not turn of *daylight running lights* and will be on all the time, causing unwanted attention.
 *Camper mode* set up through the calendar, does not rely on car being in *neutral*, so you can be connected to a charger and car, lights and center console can be completely off.
 
 There is at the current time **no support for multiple cars**. Not sure how I would do that, and since I'm not in the fortunate position of owning several vehicles, I have not spent a lot of time thinking about it, or even less - test it.
@@ -38,17 +38,17 @@ Would it be best solved through multiple calendars or using name of car in *titl
 
 ## Future
 Functionality on the drawing board
-[ ] Use request token on *calendar.list.events*, to only get updates. No need to clear and refresh entire job queue every time.
-[x] If event is more than the default one hour, trigger air condition every 29 mins.
-[ ] Support multiple cars. Either through names in title or location or separate calendars.
-[ ] Set wanted temperatures through description or title of event.
-[ ] If available, check interior temperature, and decide if turning on is nescessary.
-[ ] Check battery level, or connection status.
-[ ] Get car credentials from command line, in case it is run as daemon from /etc/rc.something
-[ ] Plugin system.
-  [ ] Event emmiters for events. Trigger on updated calendar and AC startups.
-  [ ] Status lights (on a PI)
-  [ ] Update a LED or LCD display (on PI)
-  [ ] Beep on ac start
-  [ ] Buttons for cancel or force start. (on PI)
-  [ ] Multiple cars?
+- [ ] Use request token on *calendar.list.events*, to only get updates. No need to clear and refresh entire job queue every time.
+- [x] If event is more than the default one hour, trigger air condition every 29 mins.
+- [ ] Support multiple cars. Either through names in title or location or separate calendars.
+- [ ] Set wanted temperatures through description or title of event.
+- [ ] If available, check interior temperature, and decide if turning on is nescessary.
+- [ ] Check battery level, or connection status.
+- [ ] Get car credentials from command line, in case it is run as daemon from /etc/rc.something
+- [ ] Plugin system.
+  - [ ] Event emmiters for events. Trigger on updated calendar and AC startups.
+  - [ ] Status lights (on a PI)
+  - [ ] Update a LED or LCD display (on PI)
+  - [ ] Beep on ac start
+  - [ ] Buttons for cancel or force start. (on PI)
+  - [ ] Multiple cars?
