@@ -1,4 +1,4 @@
-# TeslaGcalAC
+# Smarter Precondition
 Google Calendar control for the Tesla Model S air condition
 
 Ever wanted to control the timing of the Air Condition?
