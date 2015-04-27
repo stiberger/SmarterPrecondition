@@ -5,7 +5,7 @@ Ever wanted to control the timing of the Air Condition?
 Wouldn't it be nice to be able to control it from any device with a browser or a calendar app?
 Like from the cars browser, phone, tablet or computer? At home, work or the airport?
 
-The principal of the program is, that it is a service monitoring a specific given Google calendar. Any changes made to the calendar, unrelated to device used, will start the AC on the car at that given event start time. The program needs to be run on a computer that is running 24h a day, for it to work properly. A raspberry PI, a nas or router with proper linux on them could do the job. Otherwise you would have to use your own computer.
+The principal of the program is, that it is a service monitoring a specific given Google calendar. Any changes made to the calendar, unrelated to device used, will start the AC on the car at that given event start time. The program needs to be run on a computer that is running 24h a day, for it to work properly. A raspberry PI, a nas or router with proper linux on them could do the job. Otherwise you would have to use your own computer, and leave it running.
 
 The installation process is not straight forward (yet).
 This was just a couple of nights of coding, to get a proof of concept up and running.
