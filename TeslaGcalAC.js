@@ -2,7 +2,7 @@
  * @todo
  * [ ] Use Token on getEvents, to only get updates. No need to clear and refresh entire job queue every time.
  * [x] If event more than one hour, set up multiple cron events for starting air condition every 29 mins.
- * [ ] Get temperatures from description or title
+ * [x] Get temperatures from description or title
  * [ ] If available, check interior temperature, and decide if turning on is nescessary.
  * [ ] Check battery level, or connection status.
  * [ ] Get car credentials from command line, in case it is run as daemon from /etc/rc.something
@@ -42,8 +42,11 @@ calendar.authorize(function() {
 		//In this case at 09,19,29,39,49,59 every hour
 		//This way it is safe to add an event at nearest whole 10 minute time.
 		calendar.intervalCheck('0 9-59/10 * * * *', function() {
-			calendar.getEvents(function(dateTime) {
-				calendar.setEvent(dateTime, car.startAircondition);
+			calendar.getEvents(function(event) {
+				calendar.setEvent(event.start, function() {
+					var temp = event.description.match(/^\d\d$/i) ? event.description : 20;
+					car.startAircondition(temp);
+				});
 			});
 		});
 	});

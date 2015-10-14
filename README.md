@@ -19,7 +19,7 @@ This was just a couple of nights of coding, to get a proof of concept up and run
 
 ### Run application
 
-    nodejs TeslaGcalAC.js
+    nodejs SmarterPrecondition.js
 
 ## Use of calendar
 For any events having the default duration of one hour, the AC is only turned on once, and left alone until shut down by itself or interrupted by user, by turning on the car or turning AC off from mobile app.
@@ -39,7 +39,7 @@ Would it be best solved through multiple calendars or using name of car in *titl
 Functionality on the drawing board
 - [ ] Use request token on *calendar.list.events*, to only get updates. No need to clear and refresh entire job queue every time.
 - [ ] Support multiple cars. Either through names in title or location or separate calendars.
-- [ ] Set wanted temperatures through description or title of event.
+- [x] Set wanted temperatures through description or title of event.
 - [ ] If available, check interior temperature, and decide if turning on is nescessary.
 - [ ] Check battery level, or connection status.
 - [ ] Get car credentials from command line, in case it is run as daemon from /etc/rc.something
