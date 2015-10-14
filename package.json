@@ -1,6 +1,6 @@
 {
 	"name": "SmarterPrecondition",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"dependencies": {
 		"cron": "1.0.0",
 		"teslams": "1.0.x",
