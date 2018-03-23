@@ -4,7 +4,7 @@
 	"dependencies": {
 		"cron": "1.0.0",
 		"teslams": "1.0.x",
-		"moment": "2.10.2",
+		"moment": "^2.21.0",
 		"winston": "1.0.x",
 		"googleapis": "2.0.x",
 		"google-auth-library": "0.9.4"
